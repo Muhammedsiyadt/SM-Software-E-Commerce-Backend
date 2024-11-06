@@ -1,0 +1,9 @@
+# Root htaccess
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /smonline/
+
+# Redirect requests to the public folder
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
